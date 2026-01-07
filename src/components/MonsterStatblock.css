@@ -1,0 +1,15 @@
+.monster-statblock {
+    padding: 1rem 2rem;
+
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.monster-statblock .stat-title {
+    font-weight: bold;
+}
+
+.monster-statblock .stats-table {
+    width: 100%;
+    text-align: center;
+}

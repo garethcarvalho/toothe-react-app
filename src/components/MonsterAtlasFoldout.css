@@ -1,0 +1,27 @@
+@import "../common/variables.css";
+
+.foldout {
+    border-bottom: 1px solid var(--border-semibright);
+}
+
+.foldout-title {
+    font-size: 1.2rem;
+}
+
+.foldout-content-container {
+    overflow: hidden;
+}
+
+.foldout-content {
+    background-color: var(--grey-dark);
+}
+
+.foldout-content.expanded {
+    transition: margin-top 200ms ease-out;
+    margin-top: 0;
+}
+
+.foldout-content.collapsed {
+    transition: margin-top 200ms ease-in;
+    margin-top: -100%;
+}

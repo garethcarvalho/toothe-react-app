@@ -1,0 +1,7 @@
+@import "../common/window.css";
+
+.monster-atlas {
+    width: 40vw;
+    min-width: 500px;
+    max-width: 600px;
+}

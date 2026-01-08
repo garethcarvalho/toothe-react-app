@@ -2,7 +2,7 @@
 
 What you see here is the source code for a small little React app that pulls monster data from [an API that provides data on everything in Dungeons & Dragons 5e](https://www.dnd5eapi.co/).
 
-I didn't have all that much time to make it, and I had ambitions to make it a fully fledged Initiative tracker, but maybe I can come back to that some other day.
+I didn't have all that much time to make it, and all components are made from scratch. I had ambitions to make it a fully fledged Initiative tracker, but maybe I can come back to that some other day.
 
 ## Setup
 

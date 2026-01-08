@@ -4,7 +4,7 @@
 
 
 .window {
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     border: 1px solid white;
 
     height: var(--window-height);

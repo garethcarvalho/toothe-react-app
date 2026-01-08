@@ -6,11 +6,11 @@
     text-align: left;
     font-size: 0.9rem;
 
-    background-size: cover;
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: hsl(from var(--grey-darkest) h s l / 0.9);
-    background-blend-mode: overlay;
+    background-blend-mode: overlay; */
 }
 
 .monster-statblock .stat-title {

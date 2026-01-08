@@ -1,8 +1,13 @@
+:root {
+    --window-height: calc(100dvh - 8rem);
+}
+
+
 .window {
     border-radius: 1rem;
     border: 1px solid white;
 
-    height: 80vh;
+    height: var(--window-height);
     overflow: hidden;
 }
 
@@ -15,10 +20,11 @@
 }
 
 .window-content {
-    max-height: 90%;
-    overflow-y: auto;
+    max-height: calc(95% - 2rem);
+    min-height: calc(66% - 2rem);
+    overflow-y: scroll;
 
-    box-shadow: inset 0 0 5px black;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.4);
 
 }
 

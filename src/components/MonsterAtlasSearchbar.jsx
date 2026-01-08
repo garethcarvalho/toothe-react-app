@@ -1,4 +1,4 @@
-
+import "./MonsterAtlasSearchbar.css";
 
 const MonsterAtlasSearchbar = ({ searchCallback }) => {
 
@@ -9,7 +9,7 @@ const MonsterAtlasSearchbar = ({ searchCallback }) => {
   }
 
   return (
-    <input type="text" onKeyDown={handleKeyDown} />
+    <input className="monster-atlas-searchbar" type="text" onKeyDown={handleKeyDown} />
   );
 };
 

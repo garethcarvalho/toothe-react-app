@@ -5,10 +5,10 @@ import { getMonsterImageUrl } from "../features/monster";
 
 const MonsterStatblock = ({ monsterData: monster }) => {
   // Load the background image.
-  useEffect(() => {
-    document.querySelector(`#${monster.index}-statblock`)
-        .style.backgroundImage = `url(${getMonsterImageUrl(monster)})`;
-  }, []);
+  // useEffect(() => {
+  //   document.querySelector(`#${monster.index}-statblock`)
+  //       .style.backgroundImage = `url(${getMonsterImageUrl(monster)})`;
+  // }, []);
 
 
   // Armor Class.
@@ -63,6 +63,12 @@ const MonsterStatblock = ({ monsterData: monster }) => {
     savingThrowsContent = <div><span className="stat-title">Saving Throws</span> {savingThrows.join(", ")}</div>
   }
 
+  const languages = monster["languages"];
+  let languagesContent;
+  if (languages) {
+    languagesContent = <div><span className="stat-title">Languages</span> {languages.trim()}</div>
+  }
+
 
   return (
     <div className="monster-statblock" id={`${monster.index}-statblock`}>
@@ -100,6 +106,7 @@ const MonsterStatblock = ({ monsterData: monster }) => {
 
       {savingThrowsContent}
       {skillsContent}
+      {languagesContent}
     </div>
   );
 }

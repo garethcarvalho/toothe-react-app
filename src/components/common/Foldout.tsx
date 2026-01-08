@@ -33,7 +33,7 @@ const Foldout = ({ caption, expanded = false, expandToggleCallback, classes, chi
             </div>
 
             <div className="foldout-content-container">
-                <div className={`foldout-content${isExpanded ? "" : " collapsed"}`}>
+                <div className="foldout-content">
                     {children}
                 </div>
             </div>

@@ -28,7 +28,7 @@ Once there, you can now start running the project by running this snippit.
 
 Next, go to your browser, and navigate to `http://localhost:8080`, and you will see the project in all its glory.
 
-Inside the project, you will immediately see a giant list of monster names. You can use the search bar at the top to find specific ones. Clicking "Expand" on any of the monsters will reveal their statblock, which pulls data from the same API. It used to also display the image of the monster in the background of the expanded foldout, but the API had a lot of AI generated imagery, which I don't feel belong in something I make.
+Inside the project, you will immediately see a giant list of monster names. You can use the search bar at the top to find specific ones. Clicking "Expand" on any of the monsters will reveal their statblock, which pulls data from the same API. It used to also display the image of the monster in the background of the expanded foldout, but the API had a lot of AI generated imagery, which feel does not belong in something I make.
 
 ## Closing Remarks
 

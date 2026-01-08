@@ -1,0 +1,54 @@
+.foldout {
+    border-bottom: 1px solid white;
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.foldout-header {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid white;
+    background-color: var(--background-2);
+
+    padding: 0.5rem 1rem;
+}
+
+.foldout-caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.foldout-toggle {
+    margin-top: 0.2rem;
+    float: right;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    & > span {
+        cursor: pointer;
+    }
+}
+
+.foldout-content-container {
+    overflow:hidden;
+}
+
+.foldout-content {
+    text-align: left;
+
+    transition: margin-top 150ms ease-out;
+    margin-top: 0;
+}
+
+.foldout.collapsed {
+    & > .foldout-header {
+        border-bottom: 0;
+    }
+
+    & .foldout-content {
+        transition: margin-top 500ms ease-in;
+        margin-top: -100%;
+    }
+}

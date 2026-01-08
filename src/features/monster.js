@@ -1,9 +1,9 @@
-const API_BASE_URL = "https://www.dnd5eapi.co/api/2014";
+const API_BASE_URL = "https://www.dnd5eapi.co";
 
 export async function searchMonsters(filterStr) {
   // Is it ideal to fetch all monsters and then filter? No. But unfortunately,
   // there is no robust filtering in this API.
-  const monsters = await fetch(API_BASE_URL + "/monsters/")
+  const monsters = await fetch(API_BASE_URL + "/api/2014/monsters/")
     .then((response) => response.json())
     .then((response) => response.results);
 
@@ -17,7 +17,11 @@ export async function searchMonsters(filterStr) {
 }
 
 export async function getMonsterByIndex(index) {
-  return await fetch(API_BASE_URL + `/monsters/${index}`).then((response) =>
+  return await fetch(API_BASE_URL + `/api/2014/monsters/${index}`).then((response) =>
     response.json(),
   );
+}
+
+export function getMonsterImageUrl(monster) {
+  return API_BASE_URL + monster.image;
 }

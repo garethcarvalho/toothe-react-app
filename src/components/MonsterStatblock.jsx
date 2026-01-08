@@ -1,6 +1,16 @@
+import { useEffect } from "react";
+
 import "./MonsterStatblock.css";
+import { getMonsterImageUrl } from "../features/monster";
 
 const MonsterStatblock = ({ monsterData: monster }) => {
+  // Load the background image.
+  useEffect(() => {
+    document.querySelector(`#${monster.index}-statblock`)
+        .style.backgroundImage = `url(${getMonsterImageUrl(monster)})`;
+  }, []);
+
+
   // Armor Class.
   const armorClass = monster["armor_class"][0];
   let armorClassContent = armorClass["value"].toString();
@@ -54,10 +64,8 @@ const MonsterStatblock = ({ monsterData: monster }) => {
   }
 
 
-
-
   return (
-    <div className="monster-statblock">
+    <div className="monster-statblock" id={`${monster.index}-statblock`}>
       <div>{physicalDescription}, {monster["alignment"]}</div>
       <hr />
 

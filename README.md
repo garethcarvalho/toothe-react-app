@@ -20,9 +20,10 @@ Next, navigate into the project folder with your terminal by running this:
     cd ./toothe-react-app/
 ```
 
-Once there, you can now start running the project by running this snippit.
+Once there, after installing the project's packages, you can start running the project by running this snippit.
 
 ```console
+    npm install
     npm run dev
 ```
 
